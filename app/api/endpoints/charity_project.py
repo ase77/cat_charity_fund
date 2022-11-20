@@ -40,8 +40,7 @@ async def create_new_charity_project(
 async def get_all_projects(
         session: AsyncSession = Depends(get_async_session),
 ):
-    all_projects = await charity_project_crud.get_multi(session)
-    return all_projects
+    return await charity_project_crud.get_multi(session)
 
 
 @router.patch(
