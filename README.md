@@ -20,10 +20,19 @@ cd cat_charity_fund
 
 Cоздать и активировать виртуальное окружение:
 
-```
-python -m venv venv
-source venv/Scripts/activate
-```
+* Если у вас Linux/MacOS
+
+    ```
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
+* Если у вас Windows
+
+    ```
+    python -m venv venv
+    source venv/Scripts/activate
+    ```
 
 Установить зависимости из файла requirements.txt:
 
